@@ -112,7 +112,7 @@ namespace WowBagSimulator.VIEWMODEL
             AvailableItems.Add(Chleb);
             AvailableItems.Add(Stek);
 
-
+            /////test
         }
     }
 }
