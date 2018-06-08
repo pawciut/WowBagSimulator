@@ -10,5 +10,6 @@ namespace WowBagSimulator.MODEL
     {
         public string BagName { get; set; }
         public int BagSpace { get; set; }
+        public string BagIcon { get; set; }
     }
 }

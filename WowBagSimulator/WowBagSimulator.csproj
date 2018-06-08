@@ -81,6 +81,7 @@
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="MODEL\Bag.cs" />
     <Compile Include="MODEL\Items.cs" />
+    <Compile Include="VIEWMODEL\BagSlot.cs" />
     <Compile Include="VIEWMODEL\ListAvailableItems.cs" />
     <Compile Include="VIEWMODEL\MainWindowViewModel.cs" />
     <Page Include="VIEW\MainWindow.xaml">
