@@ -6,22 +6,22 @@
         xmlns:local="clr-namespace:WowBagSimulator"
         mc:Ignorable="d"
         Title="WOW Bag Simulator" Height="610" Width="800">
-   
     <Grid>
-        <DockPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="703*"/>
+            <ColumnDefinition Width="89*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.ColumnSpan="2">
             <Grid DockPanel.Dock="Top">
-                
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-
                 <ListView Grid.RowSpan="2" ItemsSource="{Binding AvailableItems}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -32,46 +32,35 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Source="{Binding Icon}" Grid.Column="0" Height="32" Width="32"/>
                                 <TextBlock Text="{Binding Name}" Grid.Column="1"/>
-
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>
-                    
                 </ListView>
                 <Grid Grid.Column="1">
                     <Button Content="Add"/>
                 </Grid>
-                
                 <Grid Grid.Column="2">
-                    
                     <Grid.RowDefinitions>
                         <RowDefinition />
                         <RowDefinition />
-            
                     </Grid.RowDefinitions>
-
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-
                 </Grid>
-
                 <ItemsControl Grid.Column="2"
-                              
+                             
                       Grid.Row="1">
-
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapPanel />
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
-
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <Button>
                                 <Grid>
-
                                     <Image Width="32" />
                                     <TextBlock  />
                                 </Grid>
@@ -88,6 +77,7 @@
                     </StackPanel>
                 </StatusBarItem>
             </StatusBar>
+
         </DockPanel>
     </Grid>
 </Window>
