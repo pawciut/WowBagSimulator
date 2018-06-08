@@ -69,14 +69,7 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
             </Grid>
-            <StatusBar>
-                <StatusBarItem HorizontalAlignment = "Right" >
-                    <StackPanel Orientation="Horizontal">
-                        <Button Content = "Slot1" FontWeight="Bold"/>
-                        <Button Content = "Slot2" FontWeight="Bold"/>
-                    </StackPanel>
-                </StatusBarItem>
-            </StatusBar>
+            
 
         </DockPanel>
     </Grid>
